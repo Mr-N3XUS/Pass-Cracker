@@ -1,12 +1,4 @@
-# # تبدیل ادرس سایت به qrcode
 
-# import qrcode  
-
-# url=input("enter text or url:")
-
-# img=qrcode.make(url)
-# img.save('qrcode.png')
-# print("qrcode greate successfuly!")
 
 
 # پیدا کردن رمز وازد شده
@@ -67,4 +59,5 @@ def smart_password_cracker():
 
 # اجرا
 if __name__ == "__main__":
+
     smart_password_cracker()
