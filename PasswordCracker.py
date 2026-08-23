@@ -41,13 +41,13 @@ def smart_password_cracker():
     
     end_time = time.time()
     
-    print("\n" + "="*60)
+    print("\n" + "="*61)
     print(f"🎉 CRACKED! Password found: '{guess}'")
     print(f"📈 Statistics:")
     print(f"   • Total attempts: {attempts:,}")
     print(f"   • Time: {end_time - start_time:.2f} seconds")
     print(f"   • Speed: {attempts/(end_time-start_time):,.0f} guesses/second")
-    print("="*60)
+    print("="*20,"Developed by Mr-B1nary","="*20)
 
 if __name__ == "__main__":
 
