@@ -1,7 +1,3 @@
-
-
-
-# پیدا کردن رمز وازد شده
 import random
 import string
 import time
@@ -9,7 +5,7 @@ import time
 def smart_password_cracker():
     password = input("Enter password: ")
     
-    # تشخیص نوع کاراکترهای موجود در رمز
+
     char_sets = {
         'lower': string.ascii_lowercase if any(c.islower() for c in password) else '',
         'upper': string.ascii_uppercase if any(c.isupper() for c in password) else '',
@@ -17,7 +13,6 @@ def smart_password_cracker():
         'punctuation': string.punctuation if any(c in string.punctuation for c in password) else ''
     }
     
-    # ترکیب کاراکترهای مورد نیاز
     characters = ''.join(char_sets.values())
     
     if not characters:
@@ -33,14 +28,12 @@ def smart_password_cracker():
     attempts = 0
     start_time = time.time()
     
-    # نمایش پیشرفت
     print("Starting brute-force attack...\n")
     
     while guess != password:
         guess = ''.join(random.choice(characters) for _ in range(len(password)))
         attempts += 1
         
-        # نمایش پیشرفت در لحظه
         if attempts % 5000 == 0:
             elapsed = time.time() - start_time
             speed = attempts / elapsed if elapsed > 0 else 0
@@ -48,7 +41,6 @@ def smart_password_cracker():
     
     end_time = time.time()
     
-    # نتیجه نهایی
     print("\n" + "="*60)
     print(f"🎉 CRACKED! Password found: '{guess}'")
     print(f"📈 Statistics:")
@@ -57,7 +49,6 @@ def smart_password_cracker():
     print(f"   • Speed: {attempts/(end_time-start_time):,.0f} guesses/second")
     print("="*60)
 
-# اجرا
 if __name__ == "__main__":
 
     smart_password_cracker()
