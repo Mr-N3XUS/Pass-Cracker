@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔓 Pass-Cracker | 👨‍💻 Developed by Mr-B1nary
+# 🔓 Password-Cracker | 👨‍💻 Developed by Mr-B1nary
 
 ### *A Lightweight Password Recovery Tool*
 
