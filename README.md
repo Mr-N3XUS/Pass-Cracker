@@ -47,7 +47,7 @@
 git clone https://github.com/Mr-B1nary/Pass-Cracker.git
 ```
 ```bash
-cd Pass-Cracker
+cd Password-Cracker
 ```
 ```bash
 python tamrin.py
